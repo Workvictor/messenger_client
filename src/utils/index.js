@@ -1,0 +1,1 @@
+export { getValueProp } from './getValueProp';
