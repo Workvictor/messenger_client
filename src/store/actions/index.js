@@ -1,4 +1,5 @@
 import { user }         from './user';
+import { chats }         from './chats';
 import { getValueProp } from '../utils';
 
 
@@ -7,12 +8,14 @@ const getTypes=getValueProp(`types`);
 
 export const actions={
   ...getActions({
-    user
+    user,
+    chats
   })
 };
 
 export const types={
   ...getTypes({
-    user
+    user,
+    chats
   })
 };
