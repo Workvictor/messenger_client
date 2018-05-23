@@ -2,15 +2,15 @@ import { types } from '../actions';
 
 
 const initialState={
-  id: null,
-  name: ``,
-  chats_ids: [],
+  items: [],
+  user_ids: [],
+  unread: [],
 };
 
-export const user=(state=initialState, action)=>{
+export const chats=(state=initialState, action)=>{
   const { type, payload }=action;
   switch(type){
-    case types.user.update:
+    case types.chats.update:
       return {
         ...state,
         ...payload

@@ -1,1 +1,2 @@
-export { user } from './user';
+export { user }  from './user';
+export { chats } from './chats';
