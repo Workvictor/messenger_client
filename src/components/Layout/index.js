@@ -1,1 +1,2 @@
-export { FlexCenter } from './FlexCenter';
+export { FlexCenter }  from './FlexCenter';
+export { FormWrapper } from './FormWrapper';
