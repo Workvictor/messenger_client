@@ -40,8 +40,8 @@ class App extends React.Component{
 						<Wrapper>
 							<Switch>
 								<Route exact path={routes.home} component={Home}/>
-								<Route exact path={routes.chats} component={Chats}/>
-								<Route exact path={routes.chats_id} component={Chats}/>
+								<Route path={routes.chats_id} component={Chats}/>
+								<Route path={routes.chats} component={Chats}/>
 								<Route path={routes.signin} component={SignIn}/>
 								<Route path={routes.signup} component={SignUp}/>
 								<Route component={NoMatch}/>
