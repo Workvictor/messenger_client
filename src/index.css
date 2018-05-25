@@ -1,26 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic,cyrillic-ext,latin-ext');
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-body *{
-  box-sizing: border-box;
+body * {
+    box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,h6{
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
 }
 
-a{
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-a:hover{
-  color: inherit;
-  text-decoration: none;
+a:hover {
+    color: inherit;
+    text-decoration: none;
 }
