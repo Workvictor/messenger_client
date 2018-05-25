@@ -8,9 +8,27 @@ import {
 }                   from 'react-router-dom';
 import styled       from 'styled-components'
 import { routes }   from './router';
+import {
+	Home,
+	Chats,
+	SignIn,
+	SignUp,
+	NoMatch,
+}                   from './components'
+
+const Main=styled.div`
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #211E27;
+`;
 
 const Wrapper=styled.div`
-  background-color: #211E27;
+  background: linear-gradient(180deg, rgba(31, 26, 39, 0.83) 33.41%, #211E27 113.97%);
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  height: 100%;
 `;
 
 class App extends React.Component{
@@ -18,15 +36,17 @@ class App extends React.Component{
 		return (
 			<Provider store={store}>
 				<BrowserRouter>
-					<Wrapper>
-						<Switch>
-							<Route exact path={routes.home} component={Home}/>
-							<Route exact path={routes.chats} component={Chats}/>
-							<Route path={routes.signin} component={SignIn}/>
-							<Route path={routes.signun} component={SignUn}/>
-							<Route component={NoMatch}/>
-						</Switch>
-					</Wrapper>
+					<Main>
+						<Wrapper>
+							<Switch>
+								<Route exact path={routes.home} component={Home}/>
+								<Route exact path={routes.chats} component={Chats}/>
+								<Route path={routes.signin} component={SignIn}/>
+								<Route path={routes.signup} component={SignUp}/>
+								<Route component={NoMatch}/>
+							</Switch>
+						</Wrapper>
+					</Main>
 				</BrowserRouter>
 			</Provider>
 		);
