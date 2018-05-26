@@ -2,9 +2,11 @@ import React             from 'react';
 import styled            from 'styled-components';
 import { Link }          from 'react-router-dom';
 import { routes }        from '../index';
-import { FlexCenter }    from '../Layout';
 import { Animated }      from '../Animated';
-import { FormWrapper }   from '../Layout';
+import {
+	FormWrapper, Flex,
+	FlexCenter
+}                        from '../Layout';
 import { Input, Button } from '../Input';
 
 
@@ -17,18 +19,39 @@ const Wrapper=styled(FlexCenter)`
 	}
 `;
 
-const Label=styled.div`
+const FormTitle=styled.div`
+	font-size: 16px;
+	margin-bottom: 30px;
+	text-align: left;
+`;
+
+const Title=styled(Flex)`
+	font-size: 70px;
+	margin-right: 64px;
+	width: 450px;
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: 700;
+`;
+
+const Label=styled(Flex)`
+	align-items: center;
+	justify-content: space-between;
 	text-align: left;
 	margin-bottom: 12px;
-	font-size: 14px;
 	color: #FFFFFF;
+	& a{
+		font-size: 12px;
+		color: #65567E;
+	}
 `;
+
 const StyledButton=styled(Button)`
 	width: 100%
 `;
 
 const Group=styled.div`
-	margin-bottom: 12px;
+	margin-bottom: 42px;
 	& a{
 		color: #BAA4DF;
 	}
@@ -36,22 +59,27 @@ const Group=styled.div`
 
 export const SignIn=()=>{
 	return (
-		<Wrapper>
-			<Animated animation={`fadeInDown`}>
-				<h1 className={`text-shadow`}>SignIn</h1>
+		<Wrapper row>
+			<Title>
+				<Animated animation={`fadeInLeft`}>
+					Enter your details below.
+				</Animated>
+			</Title>
+			<Animated animation={`fadeInRight`}>
 				<FormWrapper>
+					<FormTitle>
+						Login
+					</FormTitle>
 					<Group>
 						<Label>Email</Label>
 						<Input/>
 					</Group>
 					<Group>
-						<Label>Password</Label>
+						<Label>Password<Link to={routes.signup}>Forgot password?</Link></Label>
 						<Input/>
 					</Group>
 					<Group>
 						<Label>Remember me</Label>
-					</Group>
-					<Group>
 						<StyledButton>
 							Login
 						</StyledButton>
