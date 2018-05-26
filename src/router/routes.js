@@ -3,5 +3,7 @@ export const routes={
 	signin: `/signin`,
 	signup: `/signup`,
 	chats: `/chats`,
-	chats_id: `/chats/:id`
+	chats_id: `/chats/:id`,
+	terms: `/terms`,
+	privacy: `/privacy`,
 };

@@ -4,7 +4,8 @@ import { Link }          from 'react-router-dom';
 import { routes }        from '../index';
 import { Animated }      from '../Animated';
 import {
-	FormWrapper, Flex,
+	FormWrapper,
+	Flex,
 	FlexCenter
 }                        from '../Layout';
 import { Input, Button } from '../Input';
