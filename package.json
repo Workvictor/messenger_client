@@ -1,6 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "homepage": "http://victorpunko.ru/development/messenger_client",
   "private": true,
   "dependencies": {
     "npm": "^6.0.1",

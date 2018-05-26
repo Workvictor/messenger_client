@@ -6,7 +6,7 @@ export const FlexCenter=styled.div`
 	align-items: center;
 	justify-content: center;
 	align-content: center;
-	flex-direction: column;
+	flex-direction: ${({row})=>row?`row`:`column`};
 	position: relative;
 	width: 100%;
 	height: 100%;

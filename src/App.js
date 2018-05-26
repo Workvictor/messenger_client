@@ -22,7 +22,7 @@ class App extends React.Component{
 	render(){
 		return (
 			<Provider store={store}>
-				<BrowserRouter>
+				<BrowserRouter basename={`/development/messenger_client`}>
 					<MainWrapper>
 						<Switch>
 							<Route exact path={routes.home} component={Home}/>
