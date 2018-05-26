@@ -3,6 +3,6 @@ import styled from 'styled-components';
 
 export const FormWrapper=styled.div`
 	background: #2D1E45;
-	padding: 60px;
-	box-shadow: 0 6px 12px rgba(39,17,55,0.95);
+	padding: 80px 32px 8px;
+	width: 460px;
 `;
