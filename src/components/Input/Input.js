@@ -16,7 +16,7 @@ const StyledInput=styled.input`
 	width: 100%;
 	outline: none;
 	font-size: 16px;
-	padding: 4px 8px;
+  padding: 12px;
 `;
 
 const Placeholder=styled.div`

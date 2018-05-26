@@ -8,11 +8,15 @@ const Wrapper=styled.button`
 	cursor: pointer;
 	display: flex;
 	align-items: center;
-	padding: 8px 24px;
+	padding: 16px 24px;
 	color: #fff;
-	font-size: 14px;
+	font-size: 16px;
 	justify-content: center;
 	outline: none;
+	transition: all 300ms;
+	&:hover{
+		background: #ee3d31;
+	}
 `;
 
 export class Button extends React.Component{
