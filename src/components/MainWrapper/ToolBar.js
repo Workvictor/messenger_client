@@ -5,20 +5,6 @@ import { routes }  from '../index';
 import { Flex }    from '../Layout';
 
 
-const Wrapper=styled.div`
-	height: 156px;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	font-size: 11px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	align-content: center;
-	flex-direction: column;
-`;
-
 const NavBar=styled.div`
 	user-select: none;
 	text-align: left;
@@ -66,7 +52,6 @@ const BarCol=styled.div`
 	justify-content: center;
 	flex-direction: column;
 	position: relative;
-	width: ${({ width })=>width || `auto`};
 `;
 
 const BarPoint=styled.div`	
