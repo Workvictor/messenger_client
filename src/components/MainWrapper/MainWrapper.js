@@ -19,14 +19,31 @@ const Wrapper=styled.div`
   height: 100%;
 `;
 
+const Content=styled.div`
+  height: calc(100% - 40px);
+  position: relative;
+`;
+
 export class MainWrapper extends React.Component{
+
+	state={
+		pageY: 0,
+	};
+
+	onMouseMove=({ pageY })=>{
+		this.setState({
+			pageY,
+		});
+	};
 
 	render(){
 		return (
-			<Main>
+			<Main onMouseMove={this.onMouseMove}>
 				<Wrapper>
-					{this.props.children}
 					<ToolBar/>
+					<Content>
+						{this.props.children}
+					</Content>
 				</Wrapper>
 			</Main>
 		);
