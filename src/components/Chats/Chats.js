@@ -67,8 +67,14 @@ const ChatMessages=styled(Flex)`
 	width: 100%;
 `;
 
-export const Chats=()=>{
-	return (
+export class Chats extends React.Component{
+
+	state={
+		barWidth: barWidth,
+	};
+
+	render(){
+		return (
 		<Wrapper>
 			<SideBarWrapper width={barWidth}>
 				<Header>
@@ -77,7 +83,7 @@ export const Chats=()=>{
 					</Animated>
 				</Header>
 				<SideBarContent>
-					{`<UserAvatar>`}
+					{`UserAvatar`}
 				</SideBarContent>
 			</SideBarWrapper>
 			<Content width={contentWidth}>
@@ -100,4 +106,6 @@ export const Chats=()=>{
 			</Content>
 		</Wrapper>
 	);
+	}
+
 };
